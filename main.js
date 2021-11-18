@@ -164,7 +164,7 @@ const imageToBase64 = require('image-to-base64')
 
                buff = await getBuffer(`https://fdz-app.herokuapp.com/api/maker/goodbye?name=${anu_user}&picurl=${imge}&namegrp=${encodeURI(mdata.subject)}&imggrp=${ime}&member=@${anu_user}&picbg=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk_nUY-WcxLBvTRJPNBUKhqWA6LdZCmZG75A&usqp=CAU`);
         buttons = [
-          { buttonId: `y`, buttonText: { displayText: "Good Bye👋GBOT" }, type: 1 },
+          { buttonId: `y`, buttonText: { displayText: "Good Bye👋GishanBOT" }, type: 1 },
         ];
         imageMsg = (
           await hyper.prepareMessageMedia(buff, "imageMessage", {
